@@ -62,7 +62,7 @@ cidr_blocks = ["0.0.0.0/0"]
 }
 
 resource "aws_instance" "web_server" {
-  ami           = "ami-0c101f26f147fa7fd"
+  ami           = "ami-XXXXXXXXXXXXXX"
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.my_subnet.id  # Use the ID of your subnet here
   vpc_security_group_ids = [aws_security_group.web_server_sg.id]  # Use the ID of your security group here
